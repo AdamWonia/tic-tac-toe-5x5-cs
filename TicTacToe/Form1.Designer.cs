@@ -56,6 +56,13 @@ namespace TicTacToe
             this.box24 = new System.Windows.Forms.Button();
             this.box25 = new System.Windows.Forms.Button();
             this.header = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.turnLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pointsX = new System.Windows.Forms.Label();
+            this.pointsO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // box1
@@ -294,12 +301,89 @@ namespace TicTacToe
             this.header.TabIndex = 25;
             this.header.Text = "Tic Tac Toe";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(576, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 39);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Turn:";
+            // 
+            // turnLabel
+            // 
+            this.turnLabel.AutoSize = true;
+            this.turnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.turnLabel.Location = new System.Drawing.Point(695, 255);
+            this.turnLabel.Name = "turnLabel";
+            this.turnLabel.Size = new System.Drawing.Size(41, 39);
+            this.turnLabel.TabIndex = 27;
+            this.turnLabel.Text = "X";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(349, 460);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 29);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Points";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(252, 500);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 29);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "X:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(448, 500);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 29);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "O:";
+            // 
+            // pointsX
+            // 
+            this.pointsX.AutoSize = true;
+            this.pointsX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pointsX.Location = new System.Drawing.Point(297, 500);
+            this.pointsX.Name = "pointsX";
+            this.pointsX.Size = new System.Drawing.Size(27, 29);
+            this.pointsX.TabIndex = 31;
+            this.pointsX.Text = "0";
+            // 
+            // pointsO
+            // 
+            this.pointsO.AutoSize = true;
+            this.pointsO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pointsO.Location = new System.Drawing.Point(495, 500);
+            this.pointsO.Name = "pointsO";
+            this.pointsO.Size = new System.Drawing.Size(27, 29);
+            this.pointsO.TabIndex = 32;
+            this.pointsO.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 574);
+            this.Controls.Add(this.pointsO);
+            this.Controls.Add(this.pointsX);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.turnLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.header);
             this.Controls.Add(this.box25);
             this.Controls.Add(this.box24);
@@ -361,6 +445,13 @@ namespace TicTacToe
         private System.Windows.Forms.Button box24;
         private System.Windows.Forms.Button box25;
         private System.Windows.Forms.Label header;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label turnLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label pointsX;
+        private System.Windows.Forms.Label pointsO;
     }
 }
 
