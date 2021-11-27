@@ -15,26 +15,16 @@ namespace TicTacToe
         bool player = true;
         int move = 0;
         int[,] matrix = new int[5, 5];
+        PictureBox[] boxList = new PictureBox[25];
 
         public Form1()
         {
             InitializeComponent();
+            ChangeBtnsEnable(false);
         }
 
-        private void box1_Click(object sender, EventArgs e)
+        private void ChangeBtnsEnable(bool enable)
         {
-            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
-            box1.Image = Image.FromFile(path);
-        }
-
-        private void resetBtn_Click(object sender, EventArgs e)
-        {
-            player = true;
-            move = 0;
-            turnLabel.Text = "X";
-            pointsO.Text = "0";
-            pointsX.Text = "0";
-            Button[] boxList = new Button[25];
             boxList[0] = box1;
             boxList[1] = box2;
             boxList[2] = box3;
@@ -60,11 +50,51 @@ namespace TicTacToe
             boxList[22] = box23;
             boxList[23] = box24;
             boxList[24] = box25;
-            foreach (Button btn in boxList)
+            foreach (PictureBox box in boxList)
             {
-                btn.Enabled = true;
-                btn.Image = Image.FromFile("../../images/default.png");
+                box.Enabled = enable;
+                box.Image = Image.FromFile("../../images/default.png");
             }
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box1.Image = Image.FromFile(path);
+            matrix[0, 0] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box1.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+
+
+
+
+
+
+
+        private void CheckWin()
+        {
+            if (move > 8)
+            {
+
+            }
+        }
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+            ChangeBtnsEnable(true);
+        }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            player = true;
+            move = 0;
+            turnLabel.Text = "X";
+            pointsO.Text = "0";
+            pointsX.Text = "0";
+            ChangeBtnsEnable(false);
         }
     }
 }
