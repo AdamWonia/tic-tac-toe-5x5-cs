@@ -29,6 +29,7 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.header = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.turnLabel = new System.Windows.Forms.Label();
@@ -203,6 +204,7 @@ namespace TicTacToe
             this.box1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box1.Image = ((System.Drawing.Image)(resources.GetObject("box1.Image")));
             this.box1.ImageLocation = "center";
             this.box1.Location = new System.Drawing.Point(27, 97);
             this.box1.Margin = new System.Windows.Forms.Padding(5);
@@ -219,6 +221,7 @@ namespace TicTacToe
             this.box2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box2.Image = ((System.Drawing.Image)(resources.GetObject("box2.Image")));
             this.box2.ImageLocation = "center";
             this.box2.Location = new System.Drawing.Point(97, 97);
             this.box2.Margin = new System.Windows.Forms.Padding(5);
@@ -234,6 +237,7 @@ namespace TicTacToe
             this.box3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box3.Image = ((System.Drawing.Image)(resources.GetObject("box3.Image")));
             this.box3.ImageLocation = "center";
             this.box3.Location = new System.Drawing.Point(167, 97);
             this.box3.Margin = new System.Windows.Forms.Padding(5);
@@ -249,6 +253,7 @@ namespace TicTacToe
             this.box4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box4.Image = ((System.Drawing.Image)(resources.GetObject("box4.Image")));
             this.box4.ImageLocation = "center";
             this.box4.Location = new System.Drawing.Point(237, 97);
             this.box4.Margin = new System.Windows.Forms.Padding(5);
@@ -264,6 +269,7 @@ namespace TicTacToe
             this.box5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box5.Image = ((System.Drawing.Image)(resources.GetObject("box5.Image")));
             this.box5.ImageLocation = "center";
             this.box5.Location = new System.Drawing.Point(307, 97);
             this.box5.Margin = new System.Windows.Forms.Padding(5);
@@ -279,6 +285,7 @@ namespace TicTacToe
             this.box6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box6.Image = ((System.Drawing.Image)(resources.GetObject("box6.Image")));
             this.box6.ImageLocation = "center";
             this.box6.Location = new System.Drawing.Point(27, 167);
             this.box6.Margin = new System.Windows.Forms.Padding(5);
@@ -294,6 +301,7 @@ namespace TicTacToe
             this.box7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box7.Image = ((System.Drawing.Image)(resources.GetObject("box7.Image")));
             this.box7.ImageLocation = "center";
             this.box7.Location = new System.Drawing.Point(97, 167);
             this.box7.Margin = new System.Windows.Forms.Padding(5);
@@ -309,6 +317,7 @@ namespace TicTacToe
             this.box8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box8.Image = ((System.Drawing.Image)(resources.GetObject("box8.Image")));
             this.box8.ImageLocation = "center";
             this.box8.Location = new System.Drawing.Point(167, 167);
             this.box8.Margin = new System.Windows.Forms.Padding(5);
@@ -324,6 +333,7 @@ namespace TicTacToe
             this.box9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box9.Image = ((System.Drawing.Image)(resources.GetObject("box9.Image")));
             this.box9.ImageLocation = "center";
             this.box9.Location = new System.Drawing.Point(237, 167);
             this.box9.Margin = new System.Windows.Forms.Padding(5);
@@ -339,6 +349,7 @@ namespace TicTacToe
             this.box10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box10.Image = ((System.Drawing.Image)(resources.GetObject("box10.Image")));
             this.box10.ImageLocation = "center";
             this.box10.Location = new System.Drawing.Point(307, 167);
             this.box10.Margin = new System.Windows.Forms.Padding(5);
@@ -354,6 +365,7 @@ namespace TicTacToe
             this.box11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box11.Image = ((System.Drawing.Image)(resources.GetObject("box11.Image")));
             this.box11.ImageLocation = "center";
             this.box11.Location = new System.Drawing.Point(27, 237);
             this.box11.Margin = new System.Windows.Forms.Padding(5);
@@ -369,6 +381,7 @@ namespace TicTacToe
             this.box12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box12.Image = ((System.Drawing.Image)(resources.GetObject("box12.Image")));
             this.box12.ImageLocation = "center";
             this.box12.Location = new System.Drawing.Point(97, 237);
             this.box12.Margin = new System.Windows.Forms.Padding(5);
@@ -384,6 +397,7 @@ namespace TicTacToe
             this.box13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box13.Image = ((System.Drawing.Image)(resources.GetObject("box13.Image")));
             this.box13.ImageLocation = "center";
             this.box13.Location = new System.Drawing.Point(167, 237);
             this.box13.Margin = new System.Windows.Forms.Padding(5);
@@ -399,6 +413,7 @@ namespace TicTacToe
             this.box14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box14.Image = ((System.Drawing.Image)(resources.GetObject("box14.Image")));
             this.box14.ImageLocation = "center";
             this.box14.Location = new System.Drawing.Point(237, 237);
             this.box14.Margin = new System.Windows.Forms.Padding(5);
@@ -414,6 +429,7 @@ namespace TicTacToe
             this.box15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box15.Image = ((System.Drawing.Image)(resources.GetObject("box15.Image")));
             this.box15.ImageLocation = "center";
             this.box15.Location = new System.Drawing.Point(307, 237);
             this.box15.Margin = new System.Windows.Forms.Padding(5);
@@ -429,6 +445,7 @@ namespace TicTacToe
             this.box16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box16.Image = ((System.Drawing.Image)(resources.GetObject("box16.Image")));
             this.box16.ImageLocation = "center";
             this.box16.Location = new System.Drawing.Point(27, 307);
             this.box16.Margin = new System.Windows.Forms.Padding(5);
@@ -444,6 +461,7 @@ namespace TicTacToe
             this.box17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box17.Image = ((System.Drawing.Image)(resources.GetObject("box17.Image")));
             this.box17.ImageLocation = "center";
             this.box17.Location = new System.Drawing.Point(97, 307);
             this.box17.Margin = new System.Windows.Forms.Padding(5);
@@ -459,6 +477,7 @@ namespace TicTacToe
             this.box18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box18.Image = ((System.Drawing.Image)(resources.GetObject("box18.Image")));
             this.box18.ImageLocation = "center";
             this.box18.Location = new System.Drawing.Point(167, 307);
             this.box18.Margin = new System.Windows.Forms.Padding(5);
@@ -474,6 +493,7 @@ namespace TicTacToe
             this.box19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box19.Image = ((System.Drawing.Image)(resources.GetObject("box19.Image")));
             this.box19.ImageLocation = "center";
             this.box19.Location = new System.Drawing.Point(237, 307);
             this.box19.Margin = new System.Windows.Forms.Padding(5);
@@ -489,6 +509,7 @@ namespace TicTacToe
             this.box20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box20.Image = ((System.Drawing.Image)(resources.GetObject("box20.Image")));
             this.box20.ImageLocation = "center";
             this.box20.Location = new System.Drawing.Point(307, 307);
             this.box20.Margin = new System.Windows.Forms.Padding(5);
@@ -504,6 +525,7 @@ namespace TicTacToe
             this.box21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box21.Image = ((System.Drawing.Image)(resources.GetObject("box21.Image")));
             this.box21.ImageLocation = "center";
             this.box21.Location = new System.Drawing.Point(27, 377);
             this.box21.Margin = new System.Windows.Forms.Padding(5);
@@ -519,6 +541,7 @@ namespace TicTacToe
             this.box22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box22.Image = ((System.Drawing.Image)(resources.GetObject("box22.Image")));
             this.box22.ImageLocation = "center";
             this.box22.Location = new System.Drawing.Point(97, 377);
             this.box22.Margin = new System.Windows.Forms.Padding(5);
@@ -534,6 +557,7 @@ namespace TicTacToe
             this.box23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box23.Image = ((System.Drawing.Image)(resources.GetObject("box23.Image")));
             this.box23.ImageLocation = "center";
             this.box23.Location = new System.Drawing.Point(167, 377);
             this.box23.Margin = new System.Windows.Forms.Padding(5);
@@ -549,6 +573,7 @@ namespace TicTacToe
             this.box24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box24.Image = ((System.Drawing.Image)(resources.GetObject("box24.Image")));
             this.box24.ImageLocation = "center";
             this.box24.Location = new System.Drawing.Point(237, 377);
             this.box24.Margin = new System.Windows.Forms.Padding(5);
@@ -564,6 +589,7 @@ namespace TicTacToe
             this.box25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.box25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.box25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box25.Image = ((System.Drawing.Image)(resources.GetObject("box25.Image")));
             this.box25.ImageLocation = "center";
             this.box25.Location = new System.Drawing.Point(307, 377);
             this.box25.Margin = new System.Windows.Forms.Padding(5);
