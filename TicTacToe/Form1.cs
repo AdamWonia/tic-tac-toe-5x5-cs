@@ -20,10 +20,10 @@ namespace TicTacToe
         public Form1()
         {
             InitializeComponent();
-            ChangeBtnsEnable(false);
+            ChangeBoxesEnable(false);
         }
 
-        private void ChangeBtnsEnable(bool enable)
+        private void ChangeBoxesEnable(bool enable)
         {
             boxList[0] = box1;
             boxList[1] = box2;
@@ -56,7 +56,8 @@ namespace TicTacToe
                 box.Image = Image.FromFile("../../images/default.png");
             }
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void box1_Click(object sender, EventArgs e)
         {
             string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
             box1.Image = Image.FromFile(path);
@@ -68,12 +69,53 @@ namespace TicTacToe
             CheckWin();
         }
 
+        private void box2_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box2.Image = Image.FromFile(path);
+            matrix[0, 1] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box2.Enabled = false;
+            move++;
+            CheckWin();
+        }
 
+        private void box3_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box3.Image = Image.FromFile(path);
+            matrix[0, 2] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box3.Enabled = false;
+            move++;
+            CheckWin();
+        }
 
+        private void box4_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box4.Image = Image.FromFile(path);
+            matrix[0, 3] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box4.Enabled = false;
+            move++;
+            CheckWin();
+        }
 
-
-
-
+        private void box5_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box5.Image = Image.FromFile(path);
+            matrix[0, 4] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box5.Enabled = false;
+            move++;
+            CheckWin();
+        }
 
         private void CheckWin()
         {
@@ -84,7 +126,7 @@ namespace TicTacToe
         }
         private void startBtn_Click(object sender, EventArgs e)
         {
-            ChangeBtnsEnable(true);
+            ChangeBoxesEnable(true);
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
@@ -94,7 +136,7 @@ namespace TicTacToe
             turnLabel.Text = "X";
             pointsO.Text = "0";
             pointsX.Text = "0";
-            ChangeBtnsEnable(false);
+            ChangeBoxesEnable(false);
         }
     }
 }
