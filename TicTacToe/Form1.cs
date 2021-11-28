@@ -359,11 +359,42 @@ namespace TicTacToe
 
         private void CheckWin()
         {
+            int[] row_sums = { 0, 0, 0, 0, 0 };
+            int[] col_sums = { 0, 0, 0, 0, 0 };
+            int[] diag_sums = { 0, 0 };
             if (move > 8)
             {
-
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    {
+                        row_sums[i] += matrix[i, j];
+                    }
+                    if (row_sums.Contains(5))
+                    {
+                        MessageBox.Show("X won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ChangeBoxesEnable(true);
+                        gameWon();
+                    }
+                    else if (row_sums.Contains(-5))
+                    {
+                        MessageBox.Show("O won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ChangeBoxesEnable(true);
+                        gameWon();
+                    }
+                }
             }
         }
+
+        private void gameWon()
+        {
+            MessageBox.Show((player ? "O" : "X" + " won!"), "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (player)
+                pointsO.Text = (int.Parse(pointsO.Text) + 1).ToString();
+            else
+                pointsX.Text = (int.Parse(pointsX.Text) + 1).ToString();
+        }
+
         private void startBtn_Click(object sender, EventArgs e)
         {
             ChangeBoxesEnable(true);
@@ -378,7 +409,9 @@ namespace TicTacToe
             pointsX.Text = "0";
             ChangeBoxesEnable(false);
         }
-
-
+        private void resetGame()
+        {
+            move = 0;
+        }
     }
 }
