@@ -117,6 +117,246 @@ namespace TicTacToe
             CheckWin();
         }
 
+        private void box6_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box6.Image = Image.FromFile(path);
+            matrix[1, 0] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box6.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box7_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box7.Image = Image.FromFile(path);
+            matrix[1, 1] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box7.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box8_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box8.Image = Image.FromFile(path);
+            matrix[1, 2] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box8.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box9_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box9.Image = Image.FromFile(path);
+            matrix[1, 3] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box9.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box10_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box10.Image = Image.FromFile(path);
+            matrix[1, 4] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box10.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box11_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box11.Image = Image.FromFile(path);
+            matrix[2, 0] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box11.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box12_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box12.Image = Image.FromFile(path);
+            matrix[2, 1] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box12.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box13_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box13.Image = Image.FromFile(path);
+            matrix[2, 2] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box13.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box14_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box14.Image = Image.FromFile(path);
+            matrix[2, 3] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box14.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box15_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box15.Image = Image.FromFile(path);
+            matrix[2, 4] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box15.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box16_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box16.Image = Image.FromFile(path);
+            matrix[3, 0] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box16.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box17_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box17.Image = Image.FromFile(path);
+            matrix[3, 1] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box17.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box18_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box18.Image = Image.FromFile(path);
+            matrix[3, 2] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box18.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box19_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box19.Image = Image.FromFile(path);
+            matrix[3, 3] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box19.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box20_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box20.Image = Image.FromFile(path);
+            matrix[3, 4] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box20.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box21_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box21.Image = Image.FromFile(path);
+            matrix[4, 0] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box21.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box22_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box22.Image = Image.FromFile(path);
+            matrix[4, 1] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box22.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box23_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box23.Image = Image.FromFile(path);
+            matrix[4, 2] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box23.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box24_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box24.Image = Image.FromFile(path);
+            matrix[4, 3] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box24.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
+        private void box25_Click(object sender, EventArgs e)
+        {
+            string path = player ? "../../images/imageX.png" : "../../images/imageO.png";
+            box25.Image = Image.FromFile(path);
+            matrix[4, 4] = player ? 1 : -1;
+            player = !player;
+            turnLabel.Text = player ? "X" : "O";
+            box25.Enabled = false;
+            move++;
+            CheckWin();
+        }
+
         private void CheckWin()
         {
             if (move > 8)
@@ -138,5 +378,7 @@ namespace TicTacToe
             pointsX.Text = "0";
             ChangeBoxesEnable(false);
         }
+
+
     }
 }

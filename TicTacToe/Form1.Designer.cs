@@ -310,6 +310,7 @@ namespace TicTacToe
             this.box6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box6.TabIndex = 67;
             this.box6.TabStop = false;
+            this.box6.Click += new System.EventHandler(this.box6_Click);
             // 
             // box7
             // 
@@ -328,6 +329,7 @@ namespace TicTacToe
             this.box7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box7.TabIndex = 68;
             this.box7.TabStop = false;
+            this.box7.Click += new System.EventHandler(this.box7_Click);
             // 
             // box8
             // 
@@ -346,6 +348,7 @@ namespace TicTacToe
             this.box8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box8.TabIndex = 69;
             this.box8.TabStop = false;
+            this.box8.Click += new System.EventHandler(this.box8_Click);
             // 
             // box9
             // 
@@ -364,6 +367,7 @@ namespace TicTacToe
             this.box9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box9.TabIndex = 70;
             this.box9.TabStop = false;
+            this.box9.Click += new System.EventHandler(this.box9_Click);
             // 
             // box10
             // 
@@ -382,6 +386,7 @@ namespace TicTacToe
             this.box10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box10.TabIndex = 71;
             this.box10.TabStop = false;
+            this.box10.Click += new System.EventHandler(this.box10_Click);
             // 
             // box11
             // 
@@ -400,6 +405,7 @@ namespace TicTacToe
             this.box11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box11.TabIndex = 72;
             this.box11.TabStop = false;
+            this.box11.Click += new System.EventHandler(this.box11_Click);
             // 
             // box12
             // 
@@ -418,6 +424,7 @@ namespace TicTacToe
             this.box12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box12.TabIndex = 73;
             this.box12.TabStop = false;
+            this.box12.Click += new System.EventHandler(this.box12_Click);
             // 
             // box13
             // 
@@ -436,6 +443,7 @@ namespace TicTacToe
             this.box13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box13.TabIndex = 74;
             this.box13.TabStop = false;
+            this.box13.Click += new System.EventHandler(this.box13_Click);
             // 
             // box15
             // 
@@ -454,6 +462,7 @@ namespace TicTacToe
             this.box15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box15.TabIndex = 75;
             this.box15.TabStop = false;
+            this.box15.Click += new System.EventHandler(this.box15_Click);
             // 
             // box14
             // 
@@ -472,6 +481,7 @@ namespace TicTacToe
             this.box14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box14.TabIndex = 76;
             this.box14.TabStop = false;
+            this.box14.Click += new System.EventHandler(this.box14_Click);
             // 
             // box16
             // 
@@ -490,6 +500,7 @@ namespace TicTacToe
             this.box16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box16.TabIndex = 77;
             this.box16.TabStop = false;
+            this.box16.Click += new System.EventHandler(this.box16_Click);
             // 
             // box17
             // 
@@ -508,6 +519,7 @@ namespace TicTacToe
             this.box17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box17.TabIndex = 78;
             this.box17.TabStop = false;
+            this.box17.Click += new System.EventHandler(this.box17_Click);
             // 
             // box18
             // 
@@ -526,6 +538,7 @@ namespace TicTacToe
             this.box18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box18.TabIndex = 79;
             this.box18.TabStop = false;
+            this.box18.Click += new System.EventHandler(this.box18_Click);
             // 
             // box19
             // 
@@ -544,6 +557,7 @@ namespace TicTacToe
             this.box19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box19.TabIndex = 80;
             this.box19.TabStop = false;
+            this.box19.Click += new System.EventHandler(this.box19_Click);
             // 
             // box20
             // 
@@ -562,6 +576,7 @@ namespace TicTacToe
             this.box20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box20.TabIndex = 81;
             this.box20.TabStop = false;
+            this.box20.Click += new System.EventHandler(this.box20_Click);
             // 
             // box23
             // 
@@ -580,6 +595,7 @@ namespace TicTacToe
             this.box23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box23.TabIndex = 82;
             this.box23.TabStop = false;
+            this.box23.Click += new System.EventHandler(this.box23_Click);
             // 
             // box21
             // 
@@ -598,6 +614,7 @@ namespace TicTacToe
             this.box21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box21.TabIndex = 82;
             this.box21.TabStop = false;
+            this.box21.Click += new System.EventHandler(this.box21_Click);
             // 
             // box22
             // 
@@ -616,6 +633,7 @@ namespace TicTacToe
             this.box22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box22.TabIndex = 83;
             this.box22.TabStop = false;
+            this.box22.Click += new System.EventHandler(this.box22_Click);
             // 
             // box24
             // 
@@ -634,6 +652,7 @@ namespace TicTacToe
             this.box24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box24.TabIndex = 84;
             this.box24.TabStop = false;
+            this.box24.Click += new System.EventHandler(this.box24_Click);
             // 
             // box25
             // 
@@ -652,6 +671,7 @@ namespace TicTacToe
             this.box25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.box25.TabIndex = 85;
             this.box25.TabStop = false;
+            this.box25.Click += new System.EventHandler(this.box25_Click);
             // 
             // Form1
             // 
