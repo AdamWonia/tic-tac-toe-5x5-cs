@@ -394,7 +394,7 @@ namespace TicTacToe
                 }
             }
             // There was a draw
-            if(move == 25)
+            if (move == 25)
             {
                 gameDraw();
             }
