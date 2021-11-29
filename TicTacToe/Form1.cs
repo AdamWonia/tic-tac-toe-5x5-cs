@@ -359,40 +359,82 @@ namespace TicTacToe
 
         private void CheckWin()
         {
-            int[] row_sums = { 0, 0, 0, 0, 0 };
-            int[] col_sums = { 0, 0, 0, 0, 0 };
-            int[] diag_sums = { 0, 0 };
+            int[] check_sums = new int[12];
             if (move > 8)
             {
+                // sum of values in matrix rows - first 5 elements of chech_sums list
                 for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        row_sums[i] += matrix[i, j];
+                        check_sums[i] += matrix[i, j];
                     }
-                    if (row_sums.Contains(5))
+                }
+                // sum of values in matrix rows - next 5 elements of chech_sums list
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        MessageBox.Show("X won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        ChangeBoxesEnable(true);
-                        gameWon();
+                        check_sums[i + 5] += matrix[j, i];
                     }
-                    else if (row_sums.Contains(-5))
-                    {
-                        MessageBox.Show("O won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        ChangeBoxesEnable(true);
-                        gameWon();
-                    }
+                }
+                // sum of values in matrix diagonals - last 2 elements of chech_sums list
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    check_sums[10] += matrix[i, i];
+                }
+                for (int j = 0; j < matrix.GetLength(0); j++)
+                {
+                    check_sums[11] += matrix[j, matrix.GetLength(0) - j - 1];
+                }
+                // Check if there is a win player or draw
+                if (check_sums.Contains(5) || check_sums.Contains(-5))
+                {
+                    gameWon();
+                }
+            }
+            // There was a draw
+            if(move == 25)
+            {
+                gameDraw();
+            }
+        }
+
+        private void ClearMatrix()
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = 0;
                 }
             }
         }
 
+        private void gameDraw()
+        {
+            MessageBox.Show("Draw!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            // Clear game matrix
+            ClearMatrix();
+            // Set boxes to default state
+            ChangeBoxesEnable(true);
+            // Reset game
+            resetGame();
+        }
+
         private void gameWon()
         {
-            MessageBox.Show((player ? "O" : "X" + " won!"), "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show((player ? "O" : "X") + " won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (player)
                 pointsO.Text = (int.Parse(pointsO.Text) + 1).ToString();
             else
                 pointsX.Text = (int.Parse(pointsX.Text) + 1).ToString();
+            // Clear game matrix
+            ClearMatrix();
+            // Set boxes to default state
+            ChangeBoxesEnable(true);
+            // Reset game
+            resetGame();
         }
 
         private void startBtn_Click(object sender, EventArgs e)
