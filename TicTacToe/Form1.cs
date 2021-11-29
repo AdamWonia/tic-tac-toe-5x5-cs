@@ -359,6 +359,8 @@ namespace TicTacToe
 
         private void CheckWin()
         {
+            // add if statements
+
             int[] check_sums = new int[12];
             if (move > 8)
             {
