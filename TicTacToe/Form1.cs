@@ -25,6 +25,7 @@ namespace TicTacToe
 
         private void ChangeBoxesEnable(bool enable)
         {
+            move = 0;
             boxList[0] = box1;
             boxList[1] = box2;
             boxList[2] = box3;
@@ -66,7 +67,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box1.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box2_Click(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box2.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box3_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box3.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box4_Click(object sender, EventArgs e)
@@ -102,7 +103,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box4.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box5_Click(object sender, EventArgs e)
@@ -114,7 +115,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box5.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box6_Click(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box6.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box7_Click(object sender, EventArgs e)
@@ -138,7 +139,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box7.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box8_Click(object sender, EventArgs e)
@@ -150,7 +151,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box8.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box9_Click(object sender, EventArgs e)
@@ -162,7 +163,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box9.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box10_Click(object sender, EventArgs e)
@@ -174,7 +175,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box10.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box11_Click(object sender, EventArgs e)
@@ -186,7 +187,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box11.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box12_Click(object sender, EventArgs e)
@@ -198,7 +199,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box12.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box13_Click(object sender, EventArgs e)
@@ -210,7 +211,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box13.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box14_Click(object sender, EventArgs e)
@@ -222,7 +223,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box14.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box15_Click(object sender, EventArgs e)
@@ -234,7 +235,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box15.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box16_Click(object sender, EventArgs e)
@@ -246,7 +247,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box16.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box17_Click(object sender, EventArgs e)
@@ -258,7 +259,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box17.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box18_Click(object sender, EventArgs e)
@@ -270,7 +271,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box18.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box19_Click(object sender, EventArgs e)
@@ -282,7 +283,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box19.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box20_Click(object sender, EventArgs e)
@@ -294,7 +295,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box20.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box21_Click(object sender, EventArgs e)
@@ -306,7 +307,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box21.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box22_Click(object sender, EventArgs e)
@@ -318,7 +319,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box22.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box23_Click(object sender, EventArgs e)
@@ -330,7 +331,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box23.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box24_Click(object sender, EventArgs e)
@@ -342,7 +343,7 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box24.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
         private void box25_Click(object sender, EventArgs e)
@@ -354,13 +355,13 @@ namespace TicTacToe
             turnLabel.Text = player ? "X" : "O";
             box25.Enabled = false;
             move++;
-            CheckWin();
+            CheckAllFields();
         }
 
-        private void CheckWin()
+        private void CheckAllFields()
         {
             // There are 28 opportunities to win
-            int[] check_sums = new int[28];
+            int[] sumList = new int[28];
             int idx = 0;
             if (move > 6)
             {
@@ -373,13 +374,13 @@ namespace TicTacToe
                         // Iterate over each column, but one less
                         for (int col = 0; col < matrix.GetLength(1) - 1; col++)
                         {
-                            check_sums[idx] += matrix[row, col + offset];
+                            sumList[idx] += matrix[row, col + offset];
                         }
                         idx++;
                     }
                 }
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 // Check sum in columns -> Iterate over each row
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
@@ -389,119 +390,100 @@ namespace TicTacToe
                         // Iterate over each column, but one less
                         for (int row = 0; row < matrix.GetLength(0) - 1; row++)
                         {
-                            check_sums[idx] += matrix[row + offset, col];
+                            sumList[idx] += matrix[row + offset, col];
                         }
                         idx++;
                     }
                 }
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 // Check diagonals - main diagonals
                 for (int offset = 0; offset < 2; offset++)
                 {
                     // Iterate over first main diagonal
                     for (int row = 0; row < matrix.GetLength(0) - 1; row++)
                     {
-                        check_sums[idx] += matrix[row + offset, row + offset];
+                        sumList[idx] += matrix[row + offset, row + offset];
                     }
                     idx++;
                 }
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 for (int offset = 0; offset < 2; offset++)
                 {
                     // Iterate over second main diagonal
                     for (int row = 0; row < matrix.GetLength(0) - 1; row++)
                     {
-                        check_sums[idx] += matrix[row + offset, matrix.GetLength(0) - row - offset - 1];
+                        sumList[idx] += matrix[row + offset, matrix.GetLength(0) - row - offset - 1];
                     }
                     idx++;
                 }
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 // Check other 4 diagonals
                 for (int k = 0; k < matrix.GetLength(0) - 1; k++)
                 {
-                    check_sums[idx] += matrix[k + 1, k];
+                    sumList[idx] += matrix[k + 1, k];
                 }
                 idx++;
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 for (int k = 0; k < matrix.GetLength(0) - 1; k++)
                 {
-                    check_sums[idx] += matrix[k, k + 1];
+                    sumList[idx] += matrix[k, k + 1];
                 }
                 idx++;
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 for (int k = 0; k < matrix.GetLength(0) - 1; k++)
                 {
-                    check_sums[idx] += matrix[matrix.GetLength(0) - k - 2, k];
+                    sumList[idx] += matrix[matrix.GetLength(0) - k - 2, k];
                 }
                 idx++;
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
                 for (int k = 0; k < matrix.GetLength(0) - 1; k++)
                 {
-                    check_sums[idx] += matrix[matrix.GetLength(0) - k - 1, k + 1];
+                    sumList[idx] += matrix[matrix.GetLength(0) - k - 1, k + 1];
                 }
                 // Check if there is a win player before go further
-                CheckGameWon(check_sums);
+                CheckGameWon(sumList);
             }
-            else if (move == 25)
+            if (move == 25)
             {
                 gameDraw();
-            }
-        }
-
-        private void ClearMatrix()
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    matrix[i, j] = 0;
-                }
             }
         }
 
         private void gameDraw()
         {
             MessageBox.Show("Draw!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            // Clear game matrix
-            ClearMatrix();
-            // Reset game
-            resetGame();
-            // Set boxes to default state
-            ChangeBoxesEnable(true);
+            ResetGame();
         }
 
-        private void CheckGameWon(int[] check_sums)
+        private void CheckGameWon(int[] sumList)
         {
-            if (check_sums.Contains(4) || check_sums.Contains(-4))
+            if (sumList.Contains(4) || sumList.Contains(-4))
             {
                 MessageBox.Show((player ? "O" : "X") + " won!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 if (player)
                     pointsO.Text = (int.Parse(pointsO.Text) + 1).ToString();
                 else
                     pointsX.Text = (int.Parse(pointsX.Text) + 1).ToString();
-                // Clear check_sums list:
-                for (int i = 0; i < check_sums.Length; i++)
+                // Clear sumList:
+                for (int i = 0; i < sumList.Length; i++)
                 {
-                    check_sums[i] = 0;
+                    sumList[i] = 0;
                 }
-                // Clear game matrix
-                ClearMatrix();
-                // Reset game
-                resetGame();
-                // Set boxes to default state
-                ChangeBoxesEnable(true);
+                ResetGame();
             }
         }
 
         private void startBtn_Click(object sender, EventArgs e)
         {
             ChangeBoxesEnable(true);
+            startBtn.Enabled = false;
+            MessageBox.Show("Place 4 in a row to win!", "Start!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
@@ -511,11 +493,24 @@ namespace TicTacToe
             turnLabel.Text = "X";
             pointsO.Text = "0";
             pointsX.Text = "0";
+            startBtn.Enabled = true;
             ChangeBoxesEnable(false);
         }
-        private void resetGame()
+
+        private void ResetGame()
         {
+            // Set moves to 0
             move = 0;
+            // Clear game matrix
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = 0;
+                }
+            }
+            // Set boxes to default state
+            ChangeBoxesEnable(true);
         }
     }
 }
