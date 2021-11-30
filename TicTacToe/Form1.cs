@@ -359,44 +359,80 @@ namespace TicTacToe
 
         private void CheckWin()
         {
-            // add if statements
-
-            int[] check_sums = new int[12];
-            if (move > 8)
+            // There are 28 opportunities to win
+            int[] check_sums = new int[28];
+            int idx = 0;
+            if (move > 6)
             {
-                // sum of values in matrix rows - first 5 elements of chech_sums list
-                for (int i = 0; i < matrix.GetLength(0); i++)
+                // Check sum in rows -> Iterate over each row
+                for (int row = 0; row < matrix.GetLength(0); row++)
                 {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    // There are two opportunities to win in each row
+                    for (int offset = 0; offset < 2; offset++)
                     {
-                        check_sums[i] += matrix[i, j];
+                        // Iterate over each column, but one less
+                        for (int col = 0; col < matrix.GetLength(1) - 1; col++)
+                        {
+                            check_sums[idx] += matrix[row, col + offset];
+                        }
+                        idx++;
                     }
                 }
-                // sum of values in matrix rows - next 5 elements of chech_sums list
-                for (int i = 0; i < matrix.GetLength(0); i++)
+                // Check sum in columns -> Iterate over each row
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    // There are two opportunities to win in each row
+                    for (int offset = 0; offset < 2; offset++)
                     {
-                        check_sums[i + 5] += matrix[j, i];
+                        // Iterate over each column, but one less
+                        for (int row = 0; row < matrix.GetLength(0) - 1; row++)
+                        {
+                            check_sums[idx] += matrix[row + offset, col];
+                        }
+                        idx++;
                     }
                 }
-                // sum of values in matrix diagonals - last 2 elements of chech_sums list
-                for (int i = 0; i < matrix.GetLength(0); i++)
+                // Check diagonals - main diagonals
+                for (int offset = 0; offset < 2; offset++)
                 {
-                    check_sums[10] += matrix[i, i];
+                    // Iterate over first main diagonal
+                    for (int row = 0; row < matrix.GetLength(0) - 1; row++)
+                    {
+                        check_sums[idx] += matrix[row + offset, row + offset];
+                    }
+                    idx++;
                 }
-                for (int j = 0; j < matrix.GetLength(0); j++)
+                for (int offset = 0; offset < 2; offset++)
                 {
-                    check_sums[11] += matrix[j, matrix.GetLength(0) - j - 1];
+                    // Iterate over second main diagonal
+                    for (int row = 0; row < matrix.GetLength(0) - 1; row++)
+                    {
+                        check_sums[idx] += matrix[row + offset, matrix.GetLength(0) - row - offset - 1];
+                    }
+                    idx++;
                 }
-                // Check if there is a win player or draw
-                if (check_sums.Contains(5) || check_sums.Contains(-5))
+                // Check other 4 diagonals
+                for (int k = 0; k < matrix.GetLength(0) - 1; k++)
                 {
-                    gameWon();
+                    check_sums[idx] += matrix[k + 1, k];
+                }
+                idx++;
+                for (int k = 0; k < matrix.GetLength(0) - 1; k++)
+                {
+                    check_sums[idx] += matrix[k, k + 1];
+                }
+                idx++;
+                for (int k = 0; k < matrix.GetLength(0) - 1; k++)
+                {
+                    check_sums[idx] += matrix[matrix.GetLength(0) - k - 2, k];
+                }
+                idx++;
+                for (int k = 0; k < matrix.GetLength(0) - 1; k++)
+                {
+                    check_sums[idx] += matrix[matrix.GetLength(0) - k - 1, k + 1];
                 }
             }
-            // There was a draw
-            if (move == 25)
+            else if (move == 25)
             {
                 gameDraw();
             }
