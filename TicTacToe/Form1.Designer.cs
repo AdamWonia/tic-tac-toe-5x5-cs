@@ -39,7 +39,7 @@ namespace TicTacToe
             this.pointsX = new System.Windows.Forms.Label();
             this.pointsO = new System.Windows.Forms.Label();
             this.startBtn = new System.Windows.Forms.Button();
-            this.resetBtn = new System.Windows.Forms.Button();
+            this.restartBtn = new System.Windows.Forms.Button();
             this.box2 = new System.Windows.Forms.PictureBox();
             this.box3 = new System.Windows.Forms.PictureBox();
             this.box4 = new System.Windows.Forms.PictureBox();
@@ -188,15 +188,15 @@ namespace TicTacToe
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
-            // resetBtn
+            // restartBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(392, 320);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(200, 50);
-            this.resetBtn.TabIndex = 34;
-            this.resetBtn.Text = "RESET GAME";
-            this.resetBtn.UseVisualStyleBackColor = true;
-            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            this.restartBtn.Location = new System.Drawing.Point(392, 320);
+            this.restartBtn.Name = "restartBtn";
+            this.restartBtn.Size = new System.Drawing.Size(200, 50);
+            this.restartBtn.TabIndex = 34;
+            this.restartBtn.Text = "RESTART GAME";
+            this.restartBtn.UseVisualStyleBackColor = true;
+            this.restartBtn.Click += new System.EventHandler(this.restartBtn_Click);
             // 
             // box2
             // 
@@ -705,7 +705,7 @@ namespace TicTacToe
             this.Controls.Add(this.box4);
             this.Controls.Add(this.box3);
             this.Controls.Add(this.box2);
-            this.Controls.Add(this.resetBtn);
+            this.Controls.Add(this.restartBtn);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.pointsO);
             this.Controls.Add(this.pointsX);
@@ -760,7 +760,7 @@ namespace TicTacToe
         private System.Windows.Forms.Label pointsX;
         private System.Windows.Forms.Label pointsO;
         private System.Windows.Forms.Button startBtn;
-        private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.Button restartBtn;
         private System.Windows.Forms.PictureBox box2;
         private System.Windows.Forms.PictureBox box3;
         private System.Windows.Forms.PictureBox box4;

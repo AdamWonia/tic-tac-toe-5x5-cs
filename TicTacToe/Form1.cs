@@ -12,17 +12,23 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
+        // Player X starts game
         bool player = true;
+        // Initial moves number
         int move = 0;
+        // Matrix containing the numbers 1 (X) or -1 (O), used then to check who won
         int[,] matrix = new int[5, 5];
+        // List with all PictureBoxes used in game
         PictureBox[] boxList = new PictureBox[25];
 
         public Form1()
         {
             InitializeComponent();
+            // Initialize game with disabled boxes
             ChangeBoxesEnable(false);
         }
 
+        /// <summary>Set the Enabled state of PictureBoxes and the default image</summary>
         private void ChangeBoxesEnable(bool enable)
         {
             move = 0;
@@ -358,6 +364,7 @@ namespace TicTacToe
             CheckAllFields();
         }
 
+        /// <summary>Calculates sums of values in all rows, columns and diagonals.</summary>
         private void CheckAllFields()
         {
             // There are 28 opportunities to win
@@ -455,12 +462,14 @@ namespace TicTacToe
             }
         }
 
+        /// <summary>Displays a message when there is a draw and resets the game.</summary>
         private void gameDraw()
         {
             MessageBox.Show("Draw!", "Game over!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             ResetGame();
         }
 
+        /// <summary>Checks if there are somewhere 4 symbols in a row, adds points and resets the game.</summary>
         private void CheckGameWon(int[] sumList)
         {
             if (sumList.Contains(4) || sumList.Contains(-4))
@@ -479,6 +488,7 @@ namespace TicTacToe
             }
         }
 
+        /// <summary>Enables all boxes and displays message.</summary>
         private void startBtn_Click(object sender, EventArgs e)
         {
             ChangeBoxesEnable(true);
@@ -486,7 +496,8 @@ namespace TicTacToe
             MessageBox.Show("Place 4 in a row to win!", "Start!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        private void resetBtn_Click(object sender, EventArgs e)
+        /// <summary>Disables all boxes and resets points.</summary>
+        private void restartBtn_Click(object sender, EventArgs e)
         {
             player = true;
             move = 0;
@@ -497,6 +508,7 @@ namespace TicTacToe
             ChangeBoxesEnable(false);
         }
 
+        /// <summary>Resets the game.</summary>
         private void ResetGame()
         {
             // Set moves to 0
